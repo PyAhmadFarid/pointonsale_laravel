@@ -19,5 +19,6 @@ Route::get('/', function () {
 });
 
 Route::get('/login',[AuthController::class,'loginView'])->name('login');
+Route::post('/login',[AuthController::class,'login']);
 
 
